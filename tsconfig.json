@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "moduleResolution": "Node",
+    "target": "ES2017",
+    "outDir": "dist"
+  }
+}

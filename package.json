@@ -1,0 +1,30 @@
+{
+  "name": "delivery-load-optimization",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "author": "Lukas Welinder <lukas@welinder.co>",
+  "type": "module",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "husky",
+    "lint": "eslint ./src"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "esbuild": "^0.20.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "rollup": "^4.12.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.1.0"
+  }
+}
