@@ -9,7 +9,8 @@
   "scripts": {
     "build": "rollup -c",
     "prepare": "husky",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "test": "python3 evaluateShared.py --cmd \"node ./dist/bundle.js\" --problemDir problems"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
